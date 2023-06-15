@@ -1,6 +1,6 @@
 # include <stdio.h>
 /**
- *main-entrada
+ *main - entry
  *
  *return: always 0 (success)
  */

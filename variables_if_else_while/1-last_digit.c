@@ -5,8 +5,8 @@
    * main - main is a void function
    * Return: is 0
   */
- int main(void)
- {
+int main(void)
+{
 	int n;
 	int ld;
 

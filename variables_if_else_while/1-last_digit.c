@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
- /**
-   * main - main is a void function
-   * Return: is 0
-  */
+/**
+ * main - Positive or Negative
+ * Return: is 0
+ */
 int main(void)
 {
 	int n;

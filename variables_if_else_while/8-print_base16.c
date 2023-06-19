@@ -1,21 +1,25 @@
 #include <stdio.h>
 /**
-*main - Numbers
-*Return: is 0
-*/
+ * main - Numbers
+ * Return: is 0
+ */
 
-	int main(void)
-	{
-		char numbers;
-
-		for (numbers = '0'; numbers <= '9' ; numbers++);
+int main(void)
 {
-		putchar(numbers);
-		}
+	char numbers;
+
+	char alphabet;
+
+	for (numbers = '0'; numbers <= '9'; numbers++)
 	{
-		char alphabet = 'a';
-	while (alphabet <= 'f');
+		putchar(numbers);
 	}
+	for (alphabet = 'a'; alphabet <= 'f'; alphabet++)
+	{
+		putchar(alphabet);
+	}
+
 	putchar('\n');
+
 	return (0);
 }

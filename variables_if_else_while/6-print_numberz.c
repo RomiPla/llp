@@ -6,7 +6,7 @@
 
 	int main(void)
 	{
-		char numbers;
+		int numbers;
 
 		for (numbers = '0'; numbers <= '9' ; numbers++)
 {

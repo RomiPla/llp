@@ -6,7 +6,7 @@
   *
   *@a: the array to be reversed
   *
-  *return void
+  *return always success
   */
 
 void reverse_array(int *a, int n)

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int 
+int
 **alloc_grid(int width, int height)
 {
 	int **grid;

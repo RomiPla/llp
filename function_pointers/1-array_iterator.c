@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 
-void 
+void
 array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned long int count = 0;

@@ -11,6 +11,9 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
+	int ro;
+	char *mi;
+
 	list_t *new_node = NULL;
 
 	if (str == NULL)
@@ -20,13 +23,18 @@ list_t *add_node(list_t **head, const char *str)
 	if (new_node == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str);
-	if (new_node->str == NULL)
+	mi = strdup(str);
+	if (mi == NULL)
 	{
 		free(new_node);
 		return (NULL);
 	}
 
+	for (ro = 0; str[ro];)
+		ro++;
+
+	new_node->str = mi;
+	new_node->len = ro;
 	new_node->next = *head;
 	*head = new_node;
 

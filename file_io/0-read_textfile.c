@@ -1,0 +1,35 @@
+#include <stddef.h>
+#include "main.h"
+
+/**
+ *read_textfile - read text file
+ *@filename: name of the file
+ *@letters: letters number
+ *Return:  1 on success, -1 on failure
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+	ssize_t ro, mi, na;
+	char *buf;
+
+	if (filename == NULL)
+		return (0);
+
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
+		return (0);
+
+	ro = open(filename, O_RDONLY);
+	mi = read(ro, buf, letters);
+	na = write(STDOUT_FILENO, buf, mi);
+
+	if (ro == -1 || mi == -1 || ro == -1 || na != mi)
+	{
+		free(buf);
+		return (0);
+	}
+
+	free(buf);
+	close(ro);
+	return(na);
+}
